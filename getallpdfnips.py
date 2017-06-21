@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-
-
-
 """
 Author: Avijit Dasgupta
 
@@ -61,4 +58,4 @@ for paper_link in lists:
         pdf.write(content.content)
 
 
-pdb.set_trace()
+
