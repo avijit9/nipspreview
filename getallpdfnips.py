@@ -1,26 +1,6 @@
 #!/usr/bin/env python
 
-"""
-Download all the pdfs linked on a given webpage
-Usage -
-    python grab_pdfs.py url <path/to/directory>
-        url is required
-        path is optional. Path needs to be absolute
-        will save in the current directory if no path is given
-        will save in the current directory if given path does not exist
-Requires - requests >= 1.0.4
-           beautifulsoup >= 4.0.0
-Download and install using
-    
-    pip install requests
-    pip install beautifulsoup4
-"""
 
-
-from requests import get
-from urllib.parse import urljoin
-from os import path, getcwd
-from bs4 import BeautifulSoup as soup
 
 
 """
@@ -33,6 +13,9 @@ To run this code: python get_all_pdf_nips.py year where you need to specify the 
 """
 
 
+from requests import get
+from urllib.parse import urljoin
+from os import path, getcwd
 from sys import argv
 import pdb
 from bs4 import BeautifulSoup
